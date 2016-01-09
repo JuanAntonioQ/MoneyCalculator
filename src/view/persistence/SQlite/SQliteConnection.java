@@ -54,6 +54,7 @@ public class SQliteConnection implements CurrencySetLoader{
         }
     }
 
+    
     private ExchangeRate processExchangeRate(ResultSet resultSet, Currency fromCurrency, Currency toCurrency) throws SQLException {
         return new ExchangeRate(
                 fromCurrency,
@@ -61,5 +62,4 @@ public class SQliteConnection implements CurrencySetLoader{
                 Double.parseDouble(resultSet.getString("rate"))
         );
     }
-
 }

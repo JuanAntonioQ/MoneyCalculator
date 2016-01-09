@@ -1,7 +1,6 @@
 package model;
 
 public class ExchangeRate {
-    
     private final Currency fromCurrency, toCurrency;
     private final double rate;
 
@@ -21,6 +20,5 @@ public class ExchangeRate {
 
     public double getRate() {
         return rate;
-    }
-    
+    }   
 }

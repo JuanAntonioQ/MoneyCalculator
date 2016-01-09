@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.Map;
-import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -20,7 +19,7 @@ public class ApplicationFrame extends JFrame{
     private ExchangeDialog exchangeDialog;
 
     public ApplicationFrame(CurrencySet currencySet) {
-        super("Money Calculator 2.1");
+        super("Money Calculator");
         this.currencySet = currencySet;
         this.listeners = new HashMap<>();
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -45,7 +44,7 @@ public class ApplicationFrame extends JFrame{
     }
 
     private JButton createCalculateButton() {
-        JButton button = new JButton("Calculate");
+        JButton button = new JButton("Calcular");
         button.addActionListener(createListener("Calculate"));
         return button;
     }
